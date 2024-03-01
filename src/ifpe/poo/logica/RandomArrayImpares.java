@@ -3,7 +3,7 @@ package ifpe.poo.logica;
 import java.util.Random;
 
 public class RandomArrayImpares {
-	public static void main(String[] args) {
+	public static void runTest() {
 	    Random random = new Random();
 		
 		int[] numbers = new int[100];

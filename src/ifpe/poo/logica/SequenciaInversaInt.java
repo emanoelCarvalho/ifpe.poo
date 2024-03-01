@@ -3,7 +3,7 @@ package ifpe.poo.logica;
 import java.util.Scanner;
 
 public class SequenciaInversaInt {
-	public static void main(String[] args) {
+	public static void runTest() {
 		int[] numbers = new int[10];
 		
 		Scanner sc = new Scanner(System.in);
