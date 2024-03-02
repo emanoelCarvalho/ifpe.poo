@@ -16,6 +16,10 @@ public class Main {
         System.out.println("8 - Gerar e Imprimir um Array com o Maior e Menor Elemento Aleatório");
         System.out.println("9 - Calcular a Média Aritmética de um Array Aleatório");
         System.out.println("10 - Imprimir a Sequência Inversa de Números Inteiros");
+        System.out.println("11 - Calcular a Área de um Trapézio Retângulo");
+        System.out.println("12 - Verificar se um Número é Ímpar ou Par");
+        System.out.println("13 - Determinar o Maior Número");
+        System.out.println("14 - Verificar os Tipos de Número");
         
         int number = scanner.nextInt();
 
@@ -49,6 +53,18 @@ public class Main {
             	break;
             case 10: 
             	runSequeciaInversa();
+            	break;
+            case 11: 
+            	runAreaTrapezio();
+            	break;
+            case 12: 
+            	runImparOuPar();
+            	break;
+            case 13: 
+            	runNumberBigger();
+            	break;
+            case 14: 
+            	runTiposNumber();
             	break;
             default:
                 System.out.println("Opção inválida.");
@@ -104,4 +120,20 @@ public class Main {
     	SequenciaInversaInt sequenciaInversaInt = new SequenciaInversaInt();
     	sequenciaInversaInt.runTest();
     }
+    private static void runAreaTrapezio() {
+		AreaTrapezio areaTrapezio = new AreaTrapezio();
+		areaTrapezio.runTest();
+	}
+    private static void runImparOuPar() {
+		ImparOuPar imparOuPar = new ImparOuPar();
+		imparOuPar.runTest();
+	}
+    private static void runNumberBigger() {
+		NumberBigger numberBigger = new NumberBigger();
+		numberBigger.runTest();
+	}
+    private static void runTiposNumber() {
+		TiposNumber tiposNumber = new TiposNumber();
+		tiposNumber.runTest();
+	}
 }

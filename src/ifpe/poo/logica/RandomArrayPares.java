@@ -4,13 +4,7 @@ import java.util.Random;
 
 public class RandomArrayPares {
 	public static void runTest() {
-		Random random = new Random();
-		
-		int[] numbers = new int[100];
-		
-		for (int i = 0; i < numbers.length; i++) {
-			numbers[i] = random.nextInt(1000);
-		}
+		int[] numbers = randomArray();
 		
 		System.out.println("Elementos pares do array: ");
 		for (int number : numbers) {
@@ -18,5 +12,16 @@ public class RandomArrayPares {
 				System.out.print(number + " ");
 			}
 		}
+	}
+
+	private static int[] randomArray() {
+		Random random = new Random();
+		
+		int[] numbers = new int[100];
+		
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = random.nextInt(1000);
+		}
+		return numbers;
 	}
 }
